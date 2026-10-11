@@ -1,0 +1,13 @@
+station_id,station_name,state,district,latitude,longitude,aquifer_type,total_depth_m,status
+STN-IN-TS-01,Medak Central Aquifer,Telangana,Medak,18.0475,78.2618,Granite Gneiss Hard Rock,45.0,Active
+STN-IN-TS-02,Nizamabad North Well,Telangana,Nizamabad,18.6725,78.0941,Deccan Traps Basalt,50.0,Active
+STN-IN-TS-03,Nalgonda Devarakonda,Telangana,Nalgonda,16.6975,78.9242,Granite / Quartzite,60.0,Active
+STN-IN-TS-04,Warangal Subsurface Observatory,Telangana,Warangal,17.9784,79.5941,Sandstone Alluvium,40.0,Active
+STN-IN-TS-05,Hyderabad Rajendranagar,Telangana,Hyderabad,17.3194,78.4069,Granite Gneiss,55.0,Active
+STN-IN-AP-01,Anantapur Drought Zone,Andhra Pradesh,Anantapur,14.6819,77.6006,Schist & Gneiss,65.0,Active
+STN-IN-AP-02,Kurnool Tungabhadra Basin,Andhra Pradesh,Kurnool,15.8281,78.0373,Limestone / Shale,42.0,Active
+STN-IN-AP-03,Chittoor Madanapalle Well,Andhra Pradesh,Chittoor,13.5500,78.5000,Granite Gneiss,50.0,Active
+STN-IN-MH-01,Latur Marathwada Deep Aquifer,Maharashtra,Latur,18.4088,76.5604,Fractured Basalt,70.0,Active
+STN-IN-MH-02,Solapur Semi-Arid Well,Maharashtra,Solapur,17.6599,75.9064,Deccan Basalt,62.0,Active
+STN-IN-KA-01,Kolar Hardrock Basin,Karnataka,Kolar,13.1367,78.1291,Crystalline Gneiss,80.0,Active
+STN-IN-RJ-01,Jodhpur Thar Edge Station,Rajasthan,Jodhpur,26.2389,73.0243,Alluvial / Sandstone,95.0,Active

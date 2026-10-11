@@ -1,0 +1,78 @@
+{
+  "brand": "Bhoomijal",
+  "tagline": "AI-Powered Groundwater Intelligence & Seasonal Prediction Platform",
+  "nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "map": "Interactive Map",
+    "predictionLab": "6-Month Prediction Lab",
+    "storyMode": "Farmer Ravi's Story",
+    "methodology": "Data Methodology",
+    "admin": "Data Manager"
+  },
+  "hero": {
+    "badge": "Central Ground Water Board Schema Compliant",
+    "title": "Predict Groundwater Levels 6 Months Ahead",
+    "subtitle": "Helping farmers, water managers, and communities anticipate aquifer depletion, plan borewell usage, and prepare water harvesting before crisis strikes.",
+    "exploreMap": "Explore Interactive Map",
+    "viewPredictions": "Run 6-Month Forecast",
+    "raviStory": "Experience Ravi's Story"
+  },
+  "metrics": {
+    "avgDepth": "Average Water Table Depth",
+    "criticalWells": "Stressed Monitoring Wells",
+    "forecastTrend": "6-Month Depletion Rate",
+    "freshness": "Observation Ingestion Status",
+    "unitMeters": "m bgl (below ground level)",
+    "safeStatus": "Safe Aquifer (<8m)",
+    "moderateStatus": "Moderate Stress (8-15m)",
+    "criticalStatus": "Critical Aquifer (15-25m)",
+    "severeStatus": "Severe Depletion (>25m)"
+  },
+  "mapSection": {
+    "title": "Groundwater Depth & Spatial Sensor Map",
+    "instruction": "Click anywhere on the map or select an observation well to get instant groundwater depth and a 6-month prediction.",
+    "clickPrompt": "Click any location to fetch instant aquifer depth",
+    "selectedLocation": "Selected Location",
+    "distance": "Distance to Nearest Station",
+    "depth": "Current Depth",
+    "runPrediction": "Generate 6-Month Prediction For This Location",
+    "filterState": "Filter State",
+    "allStates": "All States"
+  },
+  "prediction": {
+    "title": "6-Month Hydrogeological Prediction Engine",
+    "subtitle": "Recursive machine-learning forecast with uncertainty intervals and seasonal rainfall scenarios.",
+    "scenarioLabel": "Rainfall Scenario",
+    "scenarioNormal": "Normal Monsoon Expected",
+    "scenarioLow": "Deficit Rainfall (-30%)",
+    "scenarioHigh": "Surplus Rainfall (+30%)",
+    "runBtn": "Compute 6-Month Forecast",
+    "disclaimerTitle": "Proactive Planning Disclaimer",
+    "disclaimerText": "Predictions are hydrological model estimates based on historical rainfall and lag dynamics. Bhoomijal does not physically measure deep underground reserves or guarantee exact water tables.",
+    "farmerAdvice": "Farmer Ravi's Actionable Guidance",
+    "trajectory": "Month-by-Month Projected Depth Trajectory"
+  },
+  "story": {
+    "title": "Ravi's Story: Proactive Groundwater Planning",
+    "subtitle": "How a smallholder farmer in Telangana prevented crop failure using Bhoomijal's 6-month early forecast.",
+    "step1Title": "The Crisis of Unpredictable Borewells",
+    "step1Desc": "In Medak, Ravi cultivated paddy depending on an aging 200ft borewell. In previous years, without warning, the well would sputter and dry up mid-season during April, resulting in severe debt.",
+    "step2Title": "Using Bhoomijal's 6-Month Alert",
+    "step2Desc": "In November, Ravi clicked his village on Bhoomijal. The model projected the aquifer depth dropping from 12.5m to 19.8m (Critical stress) by March due to receding post-monsoon tables.",
+    "step3Title": "Proactive Adaptation Before Depletion",
+    "step3Desc": "With 4 months of advance warning, Ravi switched 60% of his acreage from water-intensive paddy to pearl millet and pigeon pea. He also constructed a trench recharge pit around his borewell.",
+    "step4Title": "Securing The Harvest",
+    "step4Desc": "When peak summer struck in April, surrounding wells failed, but Ravi's water demand was 50% lower, and his recharge pit buffered the aquifer. His family secured a profitable harvest."
+  },
+  "admin": {
+    "title": "Data Management & Audit Hub",
+    "subtitle": "Upload groundwater observations, validate data integrity, and inspect model health.",
+    "uploadTitle": "Ingest Observations CSV",
+    "uploadBtn": "Upload & Validate CSV",
+    "retrainBtn": "Trigger Model Retraining",
+    "downloadSample": "Download Sample CSV Template",
+    "freshnessAudit": "Data Freshness & Lineage",
+    "validationRules": "Validation Enforcement: Negative depths, dates out of range, and duplicate records are automatically rejected or sanitized."
+  }
+}

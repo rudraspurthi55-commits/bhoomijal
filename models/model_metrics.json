@@ -1,0 +1,37 @@
+{
+  "trained_at": "2026-10-11T12:57:59.093827",
+  "total_samples": 432,
+  "train_samples": 345,
+  "test_samples": 87,
+  "metrics": {
+    "rmse": 1.0959,
+    "mae": 0.8001,
+    "r2_score": 0.9826
+  },
+  "feature_importances": {
+    "depth_lag_1m": 0.9628665525283094,
+    "rainfall_mm": 0.020133545392937862,
+    "seasonal_recharge_index": 0.005308700687529552,
+    "rainfall_3m_avg": 0.00491463997144987,
+    "depth_lag_2m": 0.004108529693809883,
+    "depth_lag_3m": 0.0007482161971906146,
+    "month_sin": 0.0006786903232060108,
+    "month_cos": 0.0005493113937992191,
+    "longitude": 0.00036729808015001066,
+    "latitude": 0.00032451573161755044
+  },
+  "feature_columns": [
+    "latitude",
+    "longitude",
+    "depth_lag_1m",
+    "depth_lag_2m",
+    "depth_lag_3m",
+    "rainfall_mm",
+    "rainfall_3m_avg",
+    "month_sin",
+    "month_cos",
+    "seasonal_recharge_index"
+  ],
+  "algorithm": "RandomForestRegressor (n_estimators=100, max_depth=8)",
+  "status": "active"
+}

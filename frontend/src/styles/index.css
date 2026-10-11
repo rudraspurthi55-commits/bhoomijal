@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0B192C] text-[#E0E6ED] font-sans antialiased selection:bg-teal-500 selection:text-white;
+    min-height: 100vh;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B192C;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E3E62;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00ADB5;
+}
+
+/* Leaflet Map Customizations */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  background: #0B192C !important;
+  border-radius: 0.75rem;
+}
+.leaflet-popup-content-wrapper {
+  background: #132A44 !important;
+  color: #E0E6ED !important;
+  border: 1px solid #244771;
+  border-radius: 0.75rem !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5) !important;
+}
+.leaflet-popup-tip {
+  background: #132A44 !important;
+}
+
+/* Glowing Pulsing Markers */
+.sensor-marker-safe {
+  background-color: #10B981;
+  box-shadow: 0 0 12px #10B981;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+.sensor-marker-moderate {
+  background-color: #F59E0B;
+  box-shadow: 0 0 12px #F59E0B;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+.sensor-marker-critical {
+  background-color: #EF4444;
+  box-shadow: 0 0 14px #EF4444;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  animation: pulse 1.5s infinite;
+}
+
+/* Glass Card */
+.glass-panel {
+  background: rgba(19, 42, 68, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(36, 71, 113, 0.6);
+}
+.glass-panel:hover {
+  border-color: rgba(0, 173, 181, 0.4);
+}
