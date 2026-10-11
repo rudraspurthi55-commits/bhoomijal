@@ -13,11 +13,11 @@ export default function GroundwaterMap({ stations = [], selectedStation, onSelec
     // Check if Leaflet L is available globally or load dynamically
     if (typeof window !== 'undefined' && window.L && mapContainerRef.current && !mapInstanceRef.current) {
       const map = window.L.map(mapContainerRef.current).setView([17.5, 78.5], 6);
-      
-      // High-performance dark carto tiles
-      window.L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
-        maxZoom: 18
+
+      // OpenStreetMap tiles (free, no API key needed)
+      window.L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors',
+        maxZoom: 19
       }).addTo(map);
 
       // Click anywhere on map handler
@@ -26,7 +26,7 @@ export default function GroundwaterMap({ stations = [], selectedStation, onSelec
         if (clickMarkerRef.current) {
           map.removeLayer(clickMarkerRef.current);
         }
-        
+
         const pinIcon = window.L.divIcon({
           className: 'click-pin',
           html: `<div style="background-color:#00E5FF; width:16px; height:16px; border-radius:50%; border:2px solid #ffffff; box-shadow:0 0 10px #00E5FF;"></div>`,
@@ -61,7 +61,7 @@ export default function GroundwaterMap({ stations = [], selectedStation, onSelec
 
     filtered.forEach(stn => {
       const color = stn.latest_depth_m < 8 ? '#10B981' : stn.latest_depth_m < 15 ? '#F59E0B' : '#EF4444';
-      
+
       const customIcon = window.L.divIcon({
         className: 'station-pin',
         html: `<div style="background-color:${color}; width:14px; height:14px; border-radius:50%; border:2px solid #ffffff; box-shadow:0 0 8px ${color};"></div>`,
@@ -120,8 +120,8 @@ export default function GroundwaterMap({ stations = [], selectedStation, onSelec
       </div>
 
       {/* Map View Container */}
-      <div 
-        ref={mapContainerRef} 
+      <div
+        ref={mapContainerRef}
         className="w-full h-80 sm:h-96 rounded-xl border border-[#1E3E62] overflow-hidden relative z-0"
       >
         {/* Fallback info when leaflet is initializing */}
@@ -155,3 +155,4 @@ export default function GroundwaterMap({ stations = [], selectedStation, onSelec
     </div>
   );
 }
+s
