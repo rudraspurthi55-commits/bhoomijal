@@ -15,7 +15,7 @@ export default function GroundwaterMap({ stations = [], selectedStation, onSelec
       const map = window.L.map(mapContainerRef.current).setView([17.5, 78.5], 6);
       
       // High-performance dark carto tiles
-      window.L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+      window.L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
         maxZoom: 18
       }).addTo(map);
